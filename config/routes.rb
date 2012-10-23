@@ -14,6 +14,7 @@ OauthProviderDemo::Application.routes.draw do
   # Account linking
   match 'authentications/:user_id/link' => 'authentications#link', :as => :link_accounts
   match 'authentications/:user_id/add' => 'authentications#add', :as => :add_account
+  match 'twitter_twit' => 'twitter#create'
 
   root :to => 'auth#welcome'
 end
