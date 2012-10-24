@@ -10,7 +10,7 @@ class TwitterController < ApplicationController
                                   )
     @client.update(params[:post])
   end
-
+  
   def show
   end
 end

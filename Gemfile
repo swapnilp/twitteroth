@@ -20,3 +20,5 @@ gem 'therubyracer'
 gem 'omniauth-twitter'
 gem 'twitter'
 gem 'oauth'
+gem "em-twitter", "~> 0.2.1"
+gem 'tweetstream'

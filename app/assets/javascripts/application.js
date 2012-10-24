@@ -8,4 +8,6 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap.min
+//= require jquery.livetwitter
+//= require jquery.livetwitter.min
 //= require_tree .

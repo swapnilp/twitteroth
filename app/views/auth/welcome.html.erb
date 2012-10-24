@@ -1,9 +1,20 @@
-<span class="span10"><h1><%= @user.first_name %></h1></span>
-<%= link_to 'logout', destroy_user_session_path %>
-
+<div class="page-header">
+  <span class="span10"><h1><%= @user.first_name %></h1></span>
+  <%= link_to 'logout', destroy_user_session_path %>
+</div>
 <div>
   <%= form_tag('/twitter_twit',  :html => { :class => "form-search"})  do %>
   <%= text_field_tag(:post)%>
   <%= submit_tag "Post"%>
   <% end %>
 </div>
+
+ <p>
+    <div id="tweets"></div>
+  </p>
+ 
+<script>
+  jQuery(function($) {
+    $("#tweets").liveTwitter('swapnilpatil04');
+  })
+</script>
